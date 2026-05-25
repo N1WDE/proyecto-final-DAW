@@ -1,0 +1,44 @@
+// Importación principal de Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Variables personalizadas
+$primary-color: #4a90e2;
+$bg-color: #f4f7f6;
+
+body {
+  background-color: $bg-color;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-container {
+  h1 {
+    color: $primary-color !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.custom-card {
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.2s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  .card-title {
+    color: #333;
+    font-weight: 600;
+  }
+}
+
+.list-group-item {
+  border-radius: 0.5rem !important;
+  margin-bottom: 0.5rem;
+  border: 1px solid #eaeaea;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
